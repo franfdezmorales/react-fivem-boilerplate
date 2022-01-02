@@ -56,7 +56,7 @@ We receive the data from LUA, then we can use in all the componentes of react us
 
 To send the data to react from LUA, we need to use the native SendNUIMessage and following data.
 ```lua
-// client/main.lua
+-- client/main.lua
 SendNUIMessage({
   app = 'RESOURCENAME',
   method = 'FUNCTIONNAME', -- This method need to be the same as used on useNuiEvent hook.
