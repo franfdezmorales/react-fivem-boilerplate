@@ -10,7 +10,6 @@ function App() {
       {visible ? 
           <div className='Home'>
             <p>React with FiveM and Vite</p>
-            <img src={image} alt='' />
           </div> 
         : 
           null
