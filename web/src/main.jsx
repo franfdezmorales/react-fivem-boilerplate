@@ -1,17 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
-import {ContextProvider} from './context/Provider'
-import {NuiProvider} from 'fivem-nui-react-lib'
+import { ContextProvider } from './context/Provider'
+import { NuiProvider } from 'fivem-nui-react-lib'
 
-ReactDOM.render(
+
+const container = document.querySelector('#root')
+const root = createRoot(container)
+
+root.render(
   <React.StrictMode>
     <NuiProvider resource='RESOURCENAME'>
       <ContextProvider>
         <App />
       </ContextProvider>
     </NuiProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 )
