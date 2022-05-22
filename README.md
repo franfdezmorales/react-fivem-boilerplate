@@ -1,6 +1,6 @@
 # react-fivem-boilerplate
 
-A boilerplate to use react with fivem, bootstrapped with Vite.
+A boilerplate to use react 18 with fivem, bootstrapped with Vite.
 
 ## How to use it
 You will need to change the RESOURCENAME with the name of your script.
